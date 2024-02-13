@@ -14,42 +14,42 @@ export default function Home() {
       <Header />
       <section
         id="home"
-        className="relative flex w-screen items-center justify-center my-20"
+        className="relative flex w-screen items-center justify-center my-14 lg:my-20"
       >
         <HomeComponent />
       </section>
       <Separator />
       <section
         id="testimonials"
-        className="relative flex w-screen items-center justify-center bg-primary/70"
+        className="relative flex w-screen items-center justify-center bg-primary-foreground/70"
       >
         <TestimonialsComponent />
       </section>
       <Separator />
       <section
         id="faq"
-        className="container bg-faq bg-contain bg-no-repeat bg-center relative flex w-screen items-center justify-center my-20"
+        className="container bg-faq bg-contain bg-no-repeat bg-center relative flex w-screen items-center justify-center my-14 lg:my-20"
       >
         <FaqComponent />
       </section>
       <Separator />
       <section
         id="trends"
-        className="relative flex w-screen items-center justify-center bg-primary/70"
+        className="relative flex w-screen items-center justify-center bg-primary-foreground/70"
       >
         <TrendsComponent />
       </section>
       <Separator />
       <section
         id="bonuses"
-        className="container relative flex w-screen items-center justify-center my-20"
+        className="container relative flex w-screen items-center justify-center my-14 lg:my-20"
       >
         <BonusesComponent />
       </section>
       <Separator />
       <section
         id="offer"
-        className="relative flex w-screen items-center justify-center bg-primary/70"
+        className="relative flex w-screen items-center justify-center bg-primary-foreground/70"
       >
         <BuyComponent />
       </section>

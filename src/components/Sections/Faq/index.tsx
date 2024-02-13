@@ -22,13 +22,13 @@ export function Faq() {
     >
       <motion.h2 className="text-xl md:text-2xl lg:text-4xl text-accent font-bold text-center uppercase">
         <p>
-          <span className="text-primary-foreground">Para quem</span> é o{" "}
+          <span className="text-primary">Para quem</span> é o{" "}
           <span className="text-secondary-foreground">Guia</span> <br />{" "}
           definitivo do Brás?
         </p>
       </motion.h2>
       <div className="mt-10">
-        <Carousel className="md:hidden w-full max-w-xs">
+        <Carousel className="md:hidden w-full max-w-72">
           <CarouselContent>
             <CarouselItem>
               <FaqItem delayMs={0.1}>
@@ -101,8 +101,8 @@ export function Faq() {
               </FaqItem>
             </CarouselItem>
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
+          <CarouselPrevious variant="secondary" />
+          <CarouselNext variant="secondary" />
         </Carousel>
         <div className="md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-7 hidden">
           <FaqItem delayMs={0.1}>

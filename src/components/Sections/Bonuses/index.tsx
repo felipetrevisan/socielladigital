@@ -16,9 +16,9 @@ export function Bonuses() {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="container flex flex-col items-center justify-center gap-4 relative my-20"
+      className="container flex flex-col items-center justify-center gap-4 relative"
     >
-      <motion.h4 className="leading-[3.5rem] text-xl md:text-2xl lg:text-4xl text-accent font-bold text-center uppercase">
+      <motion.h2 className="md:leading-[3.5rem] text-xl md:text-2xl lg:text-4xl text-accent font-bold text-center uppercase">
         <p>
           Mas afinal, o que é o <br />
           <span className="text-secondary-foreground">
@@ -26,8 +26,29 @@ export function Bonuses() {
           </span>
           ?
         </p>
+      </motion.h2>
+      <motion.h4 className="md:leading-[3.5rem] text-md md:text-lg lg:text-xl text-accent font-medium text-center uppercase mt-5">
+        <p>
+          O Guia Definitivo do Brás (GDB) vai ter dar{" "}
+          <span className="text-primary">
+            passo a passo
+          </span> com{" "}
+          <span className="text-secondary-foreground">facilidade</span> e{" "}
+          <span className="text-secondary-foreground">segurança</span> para sua
+          jornada de compras no Brás.{" "}
+          <span className="text-primary">
+            Economizando tempo, dinheiro
+          </span>{" "}
+          e conhecendo os lugares dos melhores fabricantes/fornecedores da
+          região, os shoppings, ruas e as galerias que dominam as{" "}
+          <span className="text-secondary-foreground">tendências de moda</span>{" "}
+          de todo Brasil.
+        </p>
       </motion.h4>
-      <div className="flex flex-col space-y-4 w-full my-10">
+      <motion.h4 className="md:leading-[3.5rem] text-md md:text-lg lg:text-xl text-accent font-medium text-center uppercase mt-5">
+        <p>Além disso, o GDB traz incríveis 7 Bônus:</p>
+      </motion.h4>
+      <div className="flex flex-col space-y-4 w-full mb-10">
         <BonusItem
           delayMs={0.1}
           image="checklist"
@@ -107,7 +128,7 @@ export function Bonuses() {
           Para ter acesso a{" "}
           <span className="text-secondary-foreground uppercase">TUDO</span>{" "}
           isso, clique no{" "}
-          <span className="text-primary-foreground">botão abaixo</span>
+          <span className="text-primary">botão abaixo</span>
         </p>
       </motion.h4>
       <Link

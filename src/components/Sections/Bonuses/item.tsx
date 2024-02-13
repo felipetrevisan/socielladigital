@@ -39,11 +39,11 @@ export function BonusItem({
           <Image src={`/assets/${image}.jpg`} alt="" fill />
         </div>
       </CardHeader>
-      <CardContent className="p-0 w-3/4">
-        <h2 className="text-secondary-foreground font-bold text-2xl">
+      <CardContent className="p-2 md:p-0">
+        <h2 className="text-secondary-foreground font-bold text-lg lg:text-xl">
           {title}
         </h2>
-        <p className="text-background text-xl">
+        <p className="text-background text-md lg:text-lg">
           {children}
         </p>
       </CardContent>

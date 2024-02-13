@@ -25,9 +25,9 @@ const buttonVariants = cva(
         sm: "h-8 rounded-2xl px-3 text-xs",
         lg: "h-10 rounded-2xl px-8",
         xl: "h-14 rounded-2xl px-10",
-        "2xl": "h-16 rounded-2xl px-12 text-2xl",
-        "4xl": "h-20 rounded-2xl px-16 text-4xl",
-        icon: "h-9 w-9",
+        "2xl": "h-14 lg:h-16 rounded-2xl px-12 lg:text-2xl",
+        "4xl": "h-16 lg:h-20 rounded-2xl px-16 lg:text-4xl",
+        icon: "h-16 w-16",
       },
       rounded: {
         full: "rounded-full",
@@ -66,11 +66,16 @@ export interface ButtonProps
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant, size, rounded, hover, asChild = false, ...props }, ref) => {
+  (
+    { className, variant, size, rounded, hover, asChild = false, ...props },
+    ref
+  ) => {
     const Comp = asChild ? Slot : "button";
     return (
       <Comp
-        className={cn(buttonVariants({ variant, size, rounded, hover, className }))}
+        className={cn(
+          buttonVariants({ variant, size, rounded, hover, className })
+        )}
         ref={ref}
         {...props}
       />

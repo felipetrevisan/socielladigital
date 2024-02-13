@@ -14,7 +14,7 @@ export function FaqItem({
 }) {
   return (
     <MotionCard
-      className="flex bg-accent rounded-[100px] border-8 border-primary-foreground w-72 h-72 p-3 justify-center items-center"
+      className="flex bg-accent rounded-[100px] border-8 border-primary w-72 h-72 p-3 justify-center items-center"
       initial={{ opacity: 0, scale: 0 }}
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0 }}

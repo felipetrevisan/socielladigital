@@ -27,13 +27,13 @@ export function Home() {
       className="container flex flex-col items-center justify-center gap-4 relative"
     >
       <motion.h2
-        className="leading-[3.5rem] text-2xl md:text-3xl lg:text-5xl text-accent font-bold text-center uppercase"
+        className="md:leading-[3.5rem] text-2xl md:text-3xl lg:text-5xl text-accent font-bold text-center uppercase"
         variants={slideUpVariants}
         initial="initial"
         animate="animate"
       >
         <p>
-          <span className="text-primary-foreground">Multiplique</span> suas
+          <span className="text-primary">Multiplique</span> suas
           vendas! <br />
           Não perca <span className="text-secondary-foreground">
             tempo
@@ -47,10 +47,10 @@ export function Home() {
         animate="animate"
       >
         Veja o vídeo e{" "}
-        <span className="text-primary-foreground">saiba mais</span>.
+        <span className="text-primary">saiba mais</span>.
       </motion.h4>
       <motion.iframe
-        className="my-10 border-4 border-primary-foreground rounded-3xl aspect-video"
+        className="my-10 border-4 border-primary rounded-3xl aspect-video max-w-full max-h-full"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         width="800"
@@ -67,10 +67,10 @@ export function Home() {
       >
         <p>
           Clique no{" "}
-          <span className="text-primary-foreground">botão abaixo</span> e saiba
+          <span className="text-primary">botão abaixo</span> e saiba
           como ter <br />
           acesso ao{" "}
-          <span className="text-primary-foreground">
+          <span className="text-primary">
             único e mais completo
           </span>{" "}
           <span className="text-secondary-foreground">
@@ -97,7 +97,7 @@ export function Home() {
           QUERO MEU ACESSO
         </MotionButton>
       </Link>
-      <Carousel className="md:hidden w-full max-w-xs">
+      <Carousel className="md:hidden w-full max-w-64">
         <CarouselContent>
           <CarouselItem>
             <MotionCard
@@ -192,8 +192,8 @@ export function Home() {
             </MotionCard>
           </CarouselItem>
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <CarouselPrevious variant="secondary" />
+        <CarouselNext variant="secondary" />
       </Carousel>
       <div className="md:gap-7 md:grid md:grid-cols-2 lg:grid-cols-4 hidden">
         <MotionCard

@@ -12,7 +12,7 @@ const config = {
   theme: {
     container: {
       center: true,
-      padding: "2rem",
+      padding: "1.2rem",
       screens: {
         "2xl": "1400px",
       },
@@ -75,14 +75,14 @@ const config = {
       backgroundImage: {
         faq: 'url("/assets/bg.png")',
         triangles:
-          "linear-gradient(135deg, hsl(var(--primary)) 25%, transparent 25%), linear-gradient(225deg, hsl(var(--primary)) 25%, transparent 25%)",
+          "linear-gradient(135deg, hsl(var(--primary-foreground)) 25%, transparent 25%), linear-gradient(225deg, hsl(var(--primary-foreground)) 25%, transparent 25%)",
       },
       backgroundSize: {
-        triangles: "50px 100%"
-      }
+        triangles: "50px 100%",
+      },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require("tailwind-scrollbar")],
 } satisfies Config;
 
 export default config;
